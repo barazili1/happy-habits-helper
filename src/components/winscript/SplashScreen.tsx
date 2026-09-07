@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import logo from "@/assets/master-win-logo.png";
+import logo from "@/assets/1xbet-hack-logo.png";
 
 export function SplashScreen({ onDone }: { onDone: () => void }) {
   useEffect(() => {
@@ -16,11 +16,9 @@ export function SplashScreen({ onDone }: { onDone: () => void }) {
       exit={{ opacity: 0, scale: 1.03, filter: "blur(6px)" }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      {/* ambient background */}
       <div className="glow-pulse pointer-events-none absolute h-[26rem] w-[26rem] rounded-full bg-neon/12 blur-[110px]" />
       <div className="pointer-events-none absolute bottom-0 h-40 w-full bg-gradient-to-t from-background to-transparent" />
 
-      {/* emblem */}
       <div className="relative grid h-40 w-40 place-items-center">
         <motion.span
           className="orbit-ring absolute inset-0 rounded-full"
@@ -35,22 +33,26 @@ export function SplashScreen({ onDone }: { onDone: () => void }) {
           initial={{ scale: 0.85, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ type: "spring", stiffness: 160, damping: 16 }}
-          className="relative grid h-28 w-28 place-items-center overflow-hidden rounded-full luxe-card"
+          className="relative grid h-28 w-28 place-items-center"
         >
-          <span className="sheen -left-1/3" />
-          <img src={logo} alt="MASTER WIN" width={112} height={112} className="absolute inset-0 h-full w-full rounded-full object-cover" />
+          <img
+            src={logo}
+            alt="1xBet Hack"
+            width={112}
+            height={112}
+            className="h-24 w-24 object-contain drop-shadow-[0_0_24px_var(--neon)]"
+          />
         </motion.div>
       </div>
 
-      {/* wordmark */}
       <motion.h1
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25, duration: 0.6 }}
-        className="relative mt-8 text-4xl font-black tracking-[0.2em]"
+        className="relative mt-8 text-4xl font-black tracking-[0.15em]"
       >
-        <span className="neon-text">MASTER</span>
-        <span className="text-foreground/90"> WIN</span>
+        <span className="neon-text">1xBet</span>
+        <span className="text-foreground/90"> Hack</span>
       </motion.h1>
 
       <motion.p
@@ -59,12 +61,11 @@ export function SplashScreen({ onDone }: { onDone: () => void }) {
         transition={{ delay: 0.5, duration: 0.6 }}
         className="relative mt-3 text-[11px] font-semibold uppercase tracking-[0.45em] text-muted-foreground"
       >
-        MASTER WIN
+        1XBET HACK
       </motion.p>
 
       <div className="relative mt-3 h-px w-40 bg-gradient-to-l from-transparent via-neon/60 to-transparent" />
 
-      {/* progress */}
       <div className="relative mt-8 w-64">
         <div className="h-[6px] overflow-hidden rounded-full border border-neon/20 bg-transparent">
           <motion.div
