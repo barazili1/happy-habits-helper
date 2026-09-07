@@ -1,4 +1,4 @@
-import logo from "@/assets/master-win-logo.png";
+import logo from "@/assets/1xbet-hack-logo.png";
 
 export function TopBar() {
   return (
@@ -6,13 +6,13 @@ export function TopBar() {
       <div className="mx-auto flex h-14 max-w-md items-center gap-3 px-4">
         <img
           src={logo}
-          alt="MASTER WIN"
+          alt="1xBet Hack"
           width={32}
           height={32}
-          className="h-8 w-8 rounded-full ring-1 ring-neon/50 p-0.5"
+          className="h-8 w-8 object-contain"
         />
         <span className="text-lg font-extrabold tracking-wider">
-          <span className="neon-text">MASTER</span> WIN
+          <span className="neon-text">1xBet</span> Hack
         </span>
       </div>
     </header>
