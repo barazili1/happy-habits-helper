@@ -44,10 +44,10 @@ export function GameShell({
           </div>
           <img
             src={logo}
-            alt="MASTER WIN"
+            alt="1xBet Hack"
             width={32}
             height={32}
-            className="h-8 w-8 shrink-0 rounded-full ring-1 ring-neon/40"
+            className="h-8 w-8 shrink-0 object-contain"
           />
         </div>
 
